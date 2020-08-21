@@ -1,2 +1,42 @@
+//Cores principais
 $cor-primaria: #fec63e;
 $cor-secundaria: #000;
+
+//Tipografia
+//-> Lembre-se que o ideal é uso relativo para tipografia, como em e rem
+
+//Esse mixin é para fonte Helvetica, que já estou puxando no body do site
+@mixin tipo-1($tamanho) {
+  @if $tamanho == 14 {
+    font-size: 14px;
+    line-height: 20px;
+  } @else if $tamanho == 18 {
+    font-size: 18px;
+    line-height: 25px;
+  } @else if $tamanho == 24 {
+    font-size: 24px;
+    line-height: 30px;
+  } @else if $tamanho == 36 {
+    font-size: 36px;
+  } @else if $tamanho == 48 {
+    font-size: 48px;
+  }
+}
+
+@mixin tipo-2($tamanho) {
+  font-family: Georgia, "Times New Roman", serif;
+  @if $tamanho == 14 {
+    font-size: 14px;
+    line-height: 20px;
+  } @else if $tamanho == 18 {
+    font-size: 18px;
+    line-height: 25px;
+  } @else if $tamanho == 24 {
+    font-size: 24px;
+    line-height: 30px;
+  } @else if $tamanho == 36 {
+    font-size: 36px;
+  } @else if $tamanho == 48 {
+    font-size: 48px;
+  }
+}
