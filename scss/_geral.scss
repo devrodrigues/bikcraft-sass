@@ -16,9 +16,9 @@ img {
 }
 
 .btn {
-  border: 3px solid #fec63e;
+  border: 3px solid $cor-primaria;
   padding: 10px 30px;
-  color: #fec63e;
+  color: $cor-primaria;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -32,8 +32,8 @@ img {
 }
 
 .btn.btn-preto:hover {
-  color: #000;
-  border-color: #000;
+  color: $cor-secundaria;
+  border-color: $cor-secundaria;
 }
 
 .subtitulo {
@@ -41,7 +41,7 @@ img {
   font-weight: bold;
   line-height: 30px;
   letter-spacing: 0.1em;
-  color: #000;
+  color: $cor-secundaria;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
@@ -52,7 +52,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000;
+  background: $cor-secundaria;
   margin: 8px auto;
 }
 
@@ -61,7 +61,7 @@ img {
   font-weight: bold;
   line-height: 30px;
   letter-spacing: 0.1em;
-  color: #000;
+  color: $cor-secundaria;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -71,7 +71,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000;
+  background: $cor-secundaria;
   margin: 8px 0;
 }
 
@@ -81,7 +81,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #fec63e;
+  background: $cor-primaria;
   padding: 15px 0;
   z-index: 10;
 }
@@ -97,7 +97,7 @@ img {
 }
 
 .header_menu ul li a {
-  color: #000;
+  color: $cor-secundaria;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -194,7 +194,7 @@ img {
 }
 
 .produtos_lista li {
-  background: #fec63e;
+  background: $cor-primaria;
   text-align: center;
 }
 
@@ -216,7 +216,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000;
+  background: $cor-secundaria;
   margin: 2px auto;
 }
 
@@ -225,7 +225,7 @@ img {
 }
 
 .produtos_icone {
-  background: #000;
+  background: $cor-secundaria;
   padding: 20px;
   text-align: center;
 }
@@ -244,16 +244,16 @@ img {
 
 .portfolio {
   width: 100%;
-  background: #000;
+  background: $cor-secundaria;
   padding: 40px 0;
 }
 
 .portfolio .subtitulo {
-  color: #fec63e;
+  color: $cor-primaria;
 }
 
 .portfolio .subtitulo:after {
-  background: #fec63e;
+  background: $cor-primaria;
 }
 
 .portfolio_lista li:last-child {
@@ -310,7 +310,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000;
+  background: $cor-secundaria;
   margin: 6px auto;
 }
 
@@ -333,7 +333,7 @@ img {
 
 .footer {
   width: 100%;
-  background: #000;
+  background: $cor-secundaria;
   color: #fff;
   padding: 20px 0;
 }
@@ -341,7 +341,7 @@ img {
 .footer h3 {
   font-size: 18px;
   line-height: 25px;
-  color: #fec63e;
+  color: $cor-primaria;
   letter-spacing: 0.1em;
   font-weight: bold;
 }
@@ -351,7 +351,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #fec63e;
+  background: $cor-primaria;
   margin: 6px 0 12px 0;
 }
 
@@ -372,7 +372,7 @@ img {
 
 .footer_redes ul li a {
   display: block;
-  border: 3px solid #fec63e;
+  border: 3px solid $cor-primaria;
   padding: 10px;
 }
 
@@ -382,7 +382,7 @@ img {
 
 .copy {
   width: 100%;
-  background: #fec63e;
+  background: $cor-primaria;
   padding: 20px 0;
 }
 
@@ -429,7 +429,7 @@ problema com o javascript inserido*/
 }
 
 .js [data-slide-nav] button.active {
-  background: #fec63e;
+  background: $cor-primaria;
 }
 
 /* Classes para o plugin anime - Javascript */
