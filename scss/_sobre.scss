@@ -11,10 +11,18 @@
   margin-bottom: 0.1em;
   padding-right: 60px;
   @include tipo-1(18);
+  @include d(m) {
+    line-height: 20px;
+    padding-right: 0;
+    @include tipo-1(14);
+  }
 }
 
 .missao_sobre ul li {
   @include tipo-2(18);
+  @include d(m) {
+    @include tipo-1(14);
+  }
 }
 
 .foto-equipe {

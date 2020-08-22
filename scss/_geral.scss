@@ -79,16 +79,32 @@ img {
   background: $cor-primaria;
   padding: 15px 0;
   z-index: 10;
+  @include d(m) {
+    position: relative;
+    padding-bottom: 0;
+  }
 }
 
 .header_menu {
   text-align: right;
+  @include d(m) {
+    text-align: center;
+  }
+}
+
+.header img {
+  @include d(m) {
+    margin: 0 auto 10px auto;
+  }
 }
 
 .header_menu ul li {
   display: inline-block;
   margin-left: 25px;
   margin-top: 20px;
+  @include d(m) {
+    margin: 5px;
+  }
 }
 
 .header_menu ul li a {
@@ -98,14 +114,19 @@ img {
   letter-spacing: 0.1em;
   padding: 10px 0;
   @include tipo-1(14);
-}
-
-.header_menu ul li a:hover {
-  color: #fff;
-}
-
-.header_menu ul li a.menu_ativo {
-  color: #fff;
+  @include d(m) {
+    border: 4px solid $cor-secundaria;
+    width: 136px;
+    display: block;
+    float: left;
+  }
+  &:hover,
+  &.menu_ativo {
+    color: #fff;
+    @include d(m) {
+      border-color: #fff;
+    }
+  }
 }
 
 /* Introdução */
@@ -118,6 +139,10 @@ img {
   margin-top: 92px;
   text-align: center;
   padding-top: 75px;
+  @include d(m) {
+    margin-top: 0;
+    padding-top: 40px;
+  }
 }
 
 .introducao h1 {
@@ -164,6 +189,9 @@ img {
   text-align: center;
   color: #fff;
   padding-top: 30px;
+  @include d(m) {
+    margin-top: 0;
+  }
 }
 
 .introducao-interna h1 {
@@ -227,6 +255,9 @@ img {
   padding-top: 40px;
   text-align: center;
   clear: both;
+  @include d(m) {
+    padding-top: 10px;
+  }
 }
 
 .call p {
@@ -273,6 +304,12 @@ img {
   top: 209px;
   right: 162px;
   z-index: -1;
+  @include d(t) {
+    right: 66px;
+  }
+  @include d(m) {
+    display: none;
+  }
 }
 
 .qualidade img {
@@ -287,6 +324,9 @@ img {
 .qualidade_lista li {
   text-align: center;
   padding: 0 40px;
+  @include d(t) {
+    padding: 0 10px;
+  }
 }
 
 .qualidade_lista li h3 {
@@ -363,6 +403,18 @@ img {
   display: block;
   border: 3px solid $cor-primaria;
   padding: 10px;
+  @include d(t) {
+    display: block;
+    border: 3px solid $cor-primaria;
+    padding: 6px;
+  }
+}
+
+.footer_redes ul li a img {
+  @include d(t) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .footer_redes ul li a:hover {
